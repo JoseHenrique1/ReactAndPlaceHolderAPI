@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import Posts from './components/Posts';
-import './App.css';
-import loadposts from './utils/load-post';
+import Posts from "./../../components/Posts/index"
+import './style.css';
+import loadposts from './../../utils/load-post';
 
-function App() {
+function Home() {
   const [allPosts, setAllPosts] = useState([]);
 
   const loadPosts = async ()=>{
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
