@@ -1,8 +1,8 @@
-# Nome do projeto
+# React e JsonPlaceHolder Fake API
 
 <img src="imagem.png" alt="Exemplo imagem">
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> Consumo da JsonPlaceHolder Fake API por um site feito com React. Este projeto foi desenvolvido com propósito de estudar esta biblioteca Java Script.
 
 
 
@@ -10,34 +10,22 @@
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-* Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
-* Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
-* Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
+* (Obrigatório) Você instalou a versão mais recente do Node js.
+* (Obrigatório) Você possui o npm.
+* Possuir breve conhecimento em consumo de APIs e React.
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando e usando o Site
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
-
-Linux e macOS:
-```
-<comando_de_instalação>
-```
-
-Windows:
-```
-<comando_de_instalação>
-```
-
-## ☕ Usando <nome_do_projeto>
-
-Para usar <nome_do_projeto>, siga estas etapas:
+Na raiz do projeto execute os seguintes comandos para instalar as depedências e iniciar :
 
 ```
-<exemplo_de_uso>
+npm install
 ```
 
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 
+```
+npm start
+```
 
 
 ## 🤝 Colaboradores
@@ -57,8 +45,3 @@ Adicione comandos de execução e exemplos que você acha que os usuários achar
   </tr>
 </table>
 
-
-
-## 📝 Licença
-
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
