@@ -1,44 +1,21 @@
 import { useEffect, useState } from 'react';
+import Posts from './components/Posts';
 import './App.css';
+import loadposts from './utils/load-post';
 
 function App() {
   const [allPosts, setAllPosts] = useState([]);
 
   const loadPosts = async ()=>{
-    const postsResponse = fetch('https://jsonplaceholder.typicode.com/posts');
-    const photosResponse = fetch('https://jsonplaceholder.typicode.com/photos');
-
-    const [posts, photos] = await Promise.all([postsResponse, photosResponse]);
-
-    const postjson = await posts.json();
-    const photosjson = await photos.json();
-
-    const postandphotos = postjson.map((post, index)=>{
-      return {...post, cover: photosjson[index].url};
-    });
-
+    const postandphotos = await loadposts();
     setAllPosts(postandphotos);
   }
-
-  useEffect(loadPosts, []);
-
-
+  //tive que fazer isso porque a funcao load post é async
+  useEffect(()=>{loadPosts()}, []);
 
   return (
     <section className='container'>
-      <div className='posts'>
-          {allPosts.map( (item)=>{
-            return (
-              <div className='post'>
-                <img src={item.cover} alt={item.title}/>
-                <div className='post-content'>
-                  <h1>{item.title}</h1>
-                  <p>{item.body}</p>
-                </div>
-              </div>
-            )
-          })}
-      </div>
+      <Posts allPosts={allPosts} />
     </section>
   );
 }
