@@ -1,6 +1,6 @@
 # React e JsonPlaceHolder Fake API
 
-<img src="imagem.png" alt="Exemplo imagem">
+<img src="./public/PlaceHolderAPI.png" alt="Exemplo imagem">
 
 > Consumo da JsonPlaceHolder Fake API por um site feito com React. Este projeto foi desenvolvido com propósito de estudar esta biblioteca Java Script.
 
